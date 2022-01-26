@@ -1,0 +1,675 @@
+/*
+Author: Roksana Yasmin
+Author URL: #
+*/
+
+
+/*------------------------------------------------------------------
+[Table of content CSS]
+
+Primary CSS
+Header area
+About area
+Video area
+Expertise area
+Team area
+Portfolio area
+Testimonial area
+Contact area
+Footer area 
+-------------------------------------------------------------------*/
+
+
+/*-----------   1. Primary CSS     --------------*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+
+
+
+
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 1.5em;
+	color: #413d4b;
+	letter-spacing: 1px;
+}
+
+button {
+	font-family: 'Hammersmith One', sans-serif;
+}
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 900;
+}
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: #413d4b;
+}
+
+/*-----------   Header Area CSS     --------------*/
+
+.header-area {
+	background: url("images/header-bg.jpg") no-repeat center bottom / cover;
+	color: #ffffff;
+}
+.overlay {
+	background: #312754;
+	opacity: .9;
+}
+.logo img {
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+.logo h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: #00d8ca;
+	font-size: 28px;
+	text-transform: lowercase;	
+}
+.main-menu {
+	margin-top: 30px;
+}
+.main-menu ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
+	float: right;
+}
+.main-menu ul li {
+	float: left;
+	margin-left: 15px;
+}
+.main-menu ul li a {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: .5s;
+}
+.main-menu ul li:hover a,
+.main-menu ul li.active a {
+	color: #00d8ca;
+}
+
+
+/*-----------   Onclick menu CSS     --------------*/
+
+.menu-bar {
+	color: #ffffff;
+	display: none;
+	font-size: 18px;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #00d8ca;
+	cursor: pointer;
+	font-weight: 700;
+}
+.menu-bar i {
+	float: right;
+}
+
+/*-----------   Fixed header CSS     --------------*/
+
+.fixed-header {
+	background: #312754;
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 20px 0;
+	transition: .5s;
+	z-index: 9999;
+}
+.fixed ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.fixed ul li {
+	display: inline;
+	margin: 0 10px;
+}
+.fixed ul li a {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: .5s;
+}
+.fixed ul li:hover a,
+.fixed ul li.active a {
+	color: #00d8ca;
+}
+
+.header-carousel {
+	padding: 100px 50px 50px;
+	text-align: center;
+}
+.header-carousel .item > h1 {
+	font-size: 30px;
+	text-transform: capitalize;
+}
+.header-carousel .item > h1:after {
+	background: #00d8ca none repeat scroll 0 0;
+	clear: both;
+	content: "";
+	display: block;
+	height: 1px;
+	margin: 25px auto auto;
+	width: 50px;
+}
+.header-carousel .item > p {
+	margin: auto;
+	width: 80%;
+	color: #ffffff;
+}
+.learn-more {
+	background: transparent none repeat scroll 0 0;
+	border: 2px solid #00d8ca;
+	color: #00d8ca;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin: 50px 0;
+	padding: 8px;
+	text-transform: uppercase;
+	transition: .5s;
+	cursor: pointer;
+}
+.learn-more:hover {
+	color: #ffffff;
+	background: #00d8ca;
+	border: 2px solid transparent;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	background: #00d8ca none repeat scroll 0 0;
+	border: 1px solid transparent;
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: transparent;
+	margin: 5px 3px;
+	border: 1px solid #ffffff;
+}
+
+
+/*-----------   About Area CSS     --------------*/
+
+.about-area {
+	padding: 80px 0;
+}
+.about-logo img {
+	float: right;
+	margin-right: 50px;
+}
+.about-area h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.about-area .learn-more {
+	margin-bottom: 0;
+}
+
+
+/*-----------   Video Area CSS     --------------*/
+
+
+.video-area {
+	background: url("images/video-bg.jpg") no-repeat;
+	color: #ffffff;
+	overflow: hidden;
+	text-align: center;
+	position: relative;	
+    height: 550px;	
+	width: 100%;
+}
+.video-area .overlay {
+	background: #312754;
+	opacity: .9;
+    height: 550px;		
+}
+
+.video-area iframe{ 
+    display: none;
+}
+.video {
+	position: absolute;
+	top: 40%;
+	left: 45%;
+}
+.video button {
+	background: transparent;
+	border: transparent;
+}
+.video > h3 {
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+/*-----------   Expertise Area CSS     --------------*/
+
+.expertise-area {
+	text-align: center;
+	padding: 80px 0;
+}
+
+.section-header > h2 {
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.section-header:after {
+	background: #84808e  none repeat scroll 0 0;
+	clear: both;
+	content: "";
+	display: block;
+	height: 2px;
+	margin: 15px auto auto;
+	width: 50px;
+}
+.expertise {
+	margin: 80px 0;
+}
+
+.single-item {
+	border-bottom: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	height: 220px;
+	padding-top: 30px;
+}
+.single-item:nth-last-of-type(1) {
+	border-bottom: 0px solid #eeeeee;
+}
+.single-item:nth-last-of-type(2) {
+	border-bottom: 0px solid #eeeeee;
+}
+.single-item:nth-last-of-type(3) {
+	border-bottom: 0px solid #eeeeee;
+}
+.single-item:nth-of-type(3n) {
+	border-right: 0px solid #eeeeee;
+}
+.single-item > h3 {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+/*-----------   Team Area CSS     --------------*/
+
+.team-area {
+	background: url("images/team-bg.jpg") no-repeat center bottom / cover;
+	text-align: center;
+	color: #ffffff;
+}
+.team-area .section-header h2,
+.team-area .section-header p {
+	color: #ffffff;
+}
+.team-area .overlay{
+	padding: 80px 0;
+}
+.team {
+	margin: 80px 0;
+	overflow: hidden;
+}
+.item-desc {
+  border: 1px solid #7b7b7b;
+  width: 100%;
+  text-transform: uppercase;
+}
+.item-desc > h4 {
+  font-size: 13px;
+  font-weight: 700;
+}
+.item-desc > h5 {
+  font-size: 10px;
+  color: #7b7b7b;
+}
+.team-area .learn-more {
+	margin: 0;
+}
+.team-area p {
+	color: #ffffff;
+}
+.team-item {
+	margin-bottom: 30px;
+}
+
+/*-----------   Portfolio Area CSS     --------------*/
+
+.portfolio-area {
+	padding: 80px 0;
+	overflow: hidden;
+	text-align: center;
+}
+.portfolio-header {
+	margin: auto;
+	overflow: hidden;
+	width: 70%;
+}
+.portfolio-header > h2 {
+	float: left;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.portfolio-header > a.dribble-link {
+	color: #413d4b;
+	display: inline-block;
+	float: right;
+	font-size: 16px;
+	margin-top: 18px;
+	text-transform: none;
+}
+.portfolio-header > a.dribble-link:hover {
+	text-decoration: underline;
+}
+.portfolio-header > a.dribble-link i {
+	font-size: 20px;
+	margin-left: 10px;
+}
+.portfolios {
+	margin-top: 50px;
+	overflow: hidden;
+}
+.portfolios ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.portfolios li {
+	float: left;
+}
+
+.portfolios .learn-more{
+	margin-bottom: 0;
+}
+.portfolios button {
+	background: #ffffff;
+}
+.nopadding {
+	padding: 0;
+}
+.portfolios div {
+	display: none;
+}
+
+/*-----------   Testimonial Area CSS     --------------*/
+
+.testimonial-area {
+	background: url("images/testimonial-bg.jpg") no-repeat left bottom / cover;
+	text-align: center;
+}
+.testimonial-area .overlay{
+	padding: 100px 0 80px;
+}
+.tstimonial-carousel .item > p {
+	margin-bottom: 50px;
+	color: #ffffff;
+}
+.tstimonial-carousel .item > h4 {
+	font-size: 12px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: uppercase;  
+}
+
+.tstimonial-carousel .item > h5 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+
+.tstimonial-carousel .item {
+	margin-bottom: 40px;
+
+}
+.tstimonial-carousel .item .blockquote {
+	display: block;
+	margin: auto auto 30px;
+	width: 18px;
+}
+.owl-thumb-item {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+}
+.owl-thumb-item .active > img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	transition: .5s;
+}
+.owl-thumb-item > img {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+
+}
+.owl-thumb-item.active > img {
+	height: 60px;
+	width: 60px;
+
+}
+.owl-nav i {
+	font-size: 35px;
+}
+.owl-prev {
+	left: 22%;
+	position: absolute;
+	bottom: -25%;
+}
+
+.owl-next {
+	right: 22%;
+	position: absolute;
+	bottom: -25%;
+}
+.tstimonial-carousel.owl-theme .owl-nav [class*="owl-"] {
+  background: transparent;
+
+}
+
+
+
+
+/*-----------   Contact Area CSS     --------------*/
+
+.contact-area {
+	padding: 50px 0;
+}
+.contact-area h2 {
+	font-size: 22px;
+	margin-bottom: 35px;
+	text-transform: uppercase;
+}
+.client-logo {
+	margin-bottom: 20px;
+	height: 70px;
+}
+.contact-form input {
+	border: 1px solid #dddddd;
+	font-size: 12px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+.contact-form textarea {
+	border: 1px solid #dddddd;
+	font-size: 12px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+	min-height: 150px;
+}
+.contact-form input[type="submit"]{
+	width: auto;
+	border: 1px solid #00d8ca;
+	background: transparent;
+}
+.contact-form .learn-more:hover {
+	color: #ffffff;
+	background: #00d8ca;
+	border: 1px solid #ffffff;
+}
+
+
+
+
+/*-----------   Footer Area CSS     --------------*/
+
+.footer-area {
+	background: url("images/footer-bg.jpg") no-repeat left bottom / cover;
+}
+.footer-area .overlay {
+	padding: 50px 0;
+}
+.footer-area p,
+.footer-area h3,
+.footer-area i {
+	color: #ffffff;
+}
+.footer-item h3 {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.footer-item  .address p,
+.footer-item .phone p {
+	overflow: hidden;
+	margin-left: 22px;
+}
+.footer-item .address i,
+.footer-item .phone i {
+	float: left;
+	font-size: 20px;
+	margin-top: 3px;
+}
+.subscribe-form input[type="email"]{
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	opacity: 0.4;
+	padding: 10px;
+	width: 242px;
+}
+.subscribe-form button[type="submit"]{
+	background: #ffffff none repeat scroll 0 0;
+	border: 1px solid transparent;
+	color: #000000;
+	opacity: 0.5;
+	padding: 10px;
+	transition: .5s;
+}
+.subscribe-form button[type="submit"]:hover{
+	color: #ffffff;
+	background: #00d8ca;
+	border: 1px solid #ffffff;
+	opacity: 1;
+}
+.subscribe-form button[type="submit"]:hover i {
+	color: #ffffff;
+}
+.subscribe-form button i{
+	color: #000000;
+	font-size: 16px;
+}
+.social-profiles {
+	margin-top: 15px;
+}
+.social-profiles ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.social-profiles ul li {
+	float: left;
+	margin-right: 15px;
+}
+
+.social-profiles ul li a i {
+	background: transparent none repeat scroll 0 0;
+	border-radius: 50%;
+	color: #ffffff;
+	font-size: 16px;
+	height: 32px;
+	line-height: 2em;
+	text-align: center;
+	transition: all 0.5s ease 0s;
+	width: 32px;
+	border: 1px solid #fff;
+}
+.social-profiles ul li a:hover i {
+	color: #ffffff;
+	background: #00d8ca;
+	border: 1px solid #ffffff;
+}
+.footer-bottom {
+  margin-top: 25px;
+}
+.terms > ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 0;
+}
+.terms li {
+	float: left;
+	margin-right: 15px;
+}
+.terms a {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.copyright {
+	float:	right;
+}
+
+
+/* Scroll to top  */
+
+.scrolltop {
+	background: #00d8ca;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 20px;
+	padding: 5px 15px;
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	display: none;
+	cursor: pointer;
+}

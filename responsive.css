@@ -1,0 +1,144 @@
+@media all and (max-width: 992px) {
+
+.logo {
+	margin: auto;
+	width: 200px;
+}
+.main-menu ul {
+  float: none;
+  text-align: center;
+}
+.main-menu ul li {
+  display: inline;
+  float: none;
+  margin: 0 10px;
+}
+.about-area {
+	text-align: center;
+}
+.about-logo img {
+	float: none;
+	margin-right: 0;
+}
+.about-logo {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.contact-area {
+	text-align: center;
+}
+.footer-area {
+	text-align: center;
+}
+.address,
+.phone {
+  text-align: left;
+}
+.social-profiles ul {
+	text-align: center;
+}
+.social-profiles ul li {
+	float: none;
+	display: inline;
+	margin-right: 8px;
+}
+.terms ul {
+	text-align: center;
+}
+.terms ul li{
+	float: none;
+	display: inline;
+	margin-right:15px;
+}
+.copyright {
+  float: none;
+  margin-top: 30px;
+}
+
+}
+
+
+@media all and (max-width: 768px) {
+
+
+.single-item {
+	border-right: 0px solid #eeeeee;
+}
+.single-item:nth-last-of-type(1) {
+	border-bottom: 0px solid #eeeeee;
+}
+.single-item:nth-last-of-type(2) {
+	border-bottom: 0px solid #eeeeee;
+}
+.single-item:nth-last-of-type(3) {
+	border-bottom: 0px solid #eeeeee;
+}
+.single-item:nth-of-type(3n) {
+	border-right: 0px solid #eeeeee;
+}
+.portfolio-header h2,
+.portfolio-header > a.dribble-link {
+	float: none;
+}
+
+.subscribe-form input[type="email"] {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  opacity: 0.4;
+  padding: 10px;
+  width: 218px;
+}
+
+}
+
+
+
+@media all and (max-width: 670px) {
+
+.video {
+  left: 34%;
+}
+
+.owl-prev {
+  left: 10%;
+}
+.owl-next {
+	right: 10%;
+}
+
+.main-menu .menu-bar {
+	display: block;
+}
+.main-menu ul {
+	display: none;
+}
+.main-menu > ul > li {
+	display: block;
+}
+
+#playBtn > img {
+	height: auto;
+	width: 30px;
+}
+
+
+}
+
+@media all and (max-width: 500px) {
+
+.owl-prev {
+	left: 0;
+	bottom: -64px;
+}
+.owl-next {
+	right: 0;
+	bottom: -64px;
+}
+.owl-thumb-item > img {
+	margin: -1px;
+}
+
+
+}
